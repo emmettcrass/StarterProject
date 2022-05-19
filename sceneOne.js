@@ -1,11 +1,11 @@
 const gameState = {}
-class Example extends Phaser.Scene
+class sceneOne extends Phaser.Scene
 
 {
   constructor ()
   {
-      super();
-  }
+    super({ key: 'sceneOne' })
+	}
 
   preload() {
     this.load.image('codey', 'https://content.codecademy.com/courses/learn-phaser/codey.png');
@@ -89,10 +89,10 @@ class Example extends Phaser.Scene
 }
 
 
-const config = {
+/*const config = {
 	type: Phaser.AUTO,
-	width: 1440,
-	height: 820,
+	width: 800,
+	height: 600,
 	backgroundColor: "#5f2a55",
   physics: {
     default: 'arcade',
@@ -101,4 +101,4 @@ scene: [ Example ]
 	}
 
 
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(config)*/
